@@ -1,0 +1,35 @@
+method: grid
+metric:
+  goal: maximize
+  name: eval_score
+
+
+parameters:
+  lr:
+    values: [7.0e-4]
+  random_seed:
+    values: [3, 4, 5, 6, 7]
+  buffer_size:
+    values: [100]
+  num_env_mean_calculation: # number of low-fidelity environments
+    values: [10]
+  shift_level:
+    values: [0.5, 0.8, 1.2, 2.0, 5.0]
+  env:
+    values: ["hopper_gravity", "walker2d_gravity", "halfcheetah_gravity", "hopper_friction", "walker2d_friction", "halfcheetah_friction"]
+  max_step:
+    values: [1000000]
+  algorithm:
+    values: ["darc_baseline_reinforce"]
+  classifier_learning_rate:
+    values: [3.0e-4]
+  reward_augmentation_beta: # DARC default: no reweighting
+    values: [1.0]
+  classifier_hidden_sizes:
+    values: [256]
+  classifier_gaussian_noise_std:
+    values: [0.5]
+  classifier_batch_size:
+    values: [128]
+  warmup_steps:
+    values: [2000]

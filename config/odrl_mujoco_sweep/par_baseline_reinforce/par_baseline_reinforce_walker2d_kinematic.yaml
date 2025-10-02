@@ -1,0 +1,29 @@
+method: grid
+metric:
+  goal: maximize
+  name: eval_score
+
+
+parameters:
+  lr:
+    values: [7.0e-4]
+  random_seed:
+    values: [3, 4, 5, 6, 7]
+  buffer_size:
+    values: [100]
+  num_env_mean_calculation:
+    values: [2]
+  shift_level:
+    values: ["easy", "medium", "hard"]
+  env:
+    values: ["walker2d_kinematic_thighjnt"]
+  max_step:
+    values: [1000000]
+  algorithm:
+    values: ["par_baseline_reinforce"]
+  encoder_learning_rate:
+    values: [3.0e-4]
+  reward_augmentation_beta:
+    values: [0.1]
+  tau:
+    values: [0.005]

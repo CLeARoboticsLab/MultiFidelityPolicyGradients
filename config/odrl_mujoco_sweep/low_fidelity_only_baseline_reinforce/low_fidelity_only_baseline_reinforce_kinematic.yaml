@@ -1,0 +1,23 @@
+method: grid
+metric:
+  goal: maximize
+  name: eval_score
+
+
+parameters:
+  lr:
+    values: [7.0e-4]
+  random_seed:
+    values: [3, 4, 5, 6, 7]
+  buffer_size:
+    values: [100]
+  num_env_mean_calculation:
+    values: [10]
+  shift_level:
+    values: ["easy", "medium", "hard"]
+  env:
+    values: ["hopper_kinematic_legjnt", "walker2d_kinematic_thighjnt", "halfcheetah_kinematic_thighjnt"]
+  max_step:
+    values: [1000000]
+  algorithm:
+    values: ["low_fidelity_only_baseline_reinforce"]

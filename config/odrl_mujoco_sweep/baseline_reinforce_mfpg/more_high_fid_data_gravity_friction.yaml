@@ -1,0 +1,35 @@
+method: grid
+metric:
+  goal: maximize
+  name: eval_score
+
+
+parameters:
+  lr:
+    values: [9.0e-4]
+  random_seed:
+    values: [3, 4, 5, 6, 7]
+  buffer_size:
+    values: [3072]
+  shift_level:
+    values: [0.5, 0.8, 1.2, 2.0, 5.0]
+  env:
+    values: ["hopper_gravity", "hopper_friction", "walker2d_gravity", "walker2d_friction", "halfcheetah_gravity", "halfcheetah_friction"]
+  max_step:
+    values: [15000000]
+  algorithm:
+    values: ["baseline_reinforce_mfpg"]
+  multi_fidelity:
+    values: [0] # high fidelity only
+  gamma:
+    values: [0.97]
+  vf_coef:
+    values: [1.0]
+  max_grad_norm:
+    values: [1.0]
+  normalize_advantage:
+    values: [0]
+  eval_freq:
+    values: [2000]
+  num_env_mean_calculation: # not used for high-fidelity only
+    values: [10]
