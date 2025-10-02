@@ -3,6 +3,13 @@
 This repository contains the official code for the work:
 “A Multi-Fidelity Control Variate Approach for Policy Gradient Estimation.”
 
+<p align="center">
+  <img src="media/MFPGteaser.png" alt="Teaser Figure" width="600"/>
+</p>
+
+
+
+
 ## Installation
 
 1. Create a conda environment: `conda create -n mfpg`
