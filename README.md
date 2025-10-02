@@ -41,9 +41,9 @@ Configuration files are located in `config/odrl_mujoco_sweep`, covering:
 
 * **MFPG**, High-Fidelity Only, More High-Fidelity Data (15×) (`config/odrl_mujoco_sweep/baseline_reinforce_mfpg/`)
 
-* DARC
+* [DARC](https://arxiv.org/pdf/2006.13916)
 
-* PAR
+* [PAR](https://arxiv.org/pdf/2405.15369)
 
 * Low-Fidelity Only
 
