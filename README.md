@@ -1,12 +1,13 @@
 # **M**ulti**F**idelity**P**olicy**G**radients
 
 This repository contains the official code for the work:
-“A Multi-Fidelity Control Variate Approach for Policy Gradient Estimation.”
+“A **M**ulti-**F**idelity Control Variate Approach for **P**olicy **G**radient Estimation.”
+
+MFPG is a reinforcement learning framework that mixes a small amount of data from the target environment with a control variate formed from a large volume of low-fidelity simulation data to construct an unbiased, variance-reduced estimator for on-policy policy gradients and improve sample efficiency. 
 
 <p align="center">
   <img src="media/MFPGteaser.png" alt="Teaser Figure" width="600"/>
 </p>
-
 
 
 
